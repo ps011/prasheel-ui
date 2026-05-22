@@ -132,7 +132,7 @@ export function ThemeSwitcher({ className }: ThemeSwitcherProps) {
         <div
           role="listbox"
           aria-label="Theme colors"
-          className="absolute right-0 top-12 z-50 grid w-44 gap-1 rounded-[5px] border-2 border-[var(--border)] bg-[var(--secondary-background)] p-2 shadow-[4px_4px_0_0_var(--border)]"
+          className="absolute right-0 top-12 z-50 grid max-h-[min(70vh,32rem)] w-44 gap-1 overflow-y-auto rounded-[5px] border-2 border-[var(--border)] bg-[var(--secondary-background)] p-2 shadow-[4px_4px_0_0_var(--border)]"
         >
           {themeOptions.map((themeOption, index) => (
             <button
