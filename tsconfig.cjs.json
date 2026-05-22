@@ -2,6 +2,7 @@
   "extends": "./tsconfig.build.json",
   "compilerOptions": {
     "declaration": false,
+    "esModuleInterop": true,
     "module": "CommonJS",
     "moduleResolution": "Node",
     "outDir": "dist/cjs"
