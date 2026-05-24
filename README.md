@@ -72,16 +72,23 @@ Use `storageKeys.colorMode` for apps that already store `"light"` or `"dark"` in
 ## Components
 
 ```tsx
-import { Button, Card, CardContent, ThemeSwitcher } from "@prasheel/ui";
+import { AppHeader, Button, Card, CardContent, ThemeSwitcher } from "@prasheel/ui";
 
 export function Example() {
   return (
-    <Card>
-      <CardContent className="p-6">
-        <ThemeSwitcher />
-        <Button>Continue</Button>
-      </CardContent>
-    </Card>
+    <>
+      <AppHeader
+        brand="Example"
+        brandHref="/"
+        navItems={[{ href: "/settings", label: "Settings" }]}
+      />
+      <Card>
+        <CardContent className="p-6">
+          <ThemeSwitcher />
+          <Button>Continue</Button>
+        </CardContent>
+      </Card>
+    </>
   );
 }
 ```

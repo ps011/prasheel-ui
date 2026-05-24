@@ -1,5 +1,15 @@
 import { describe, expect, it } from "vitest";
-import { Accordion, Avatar, Button, Card, Sheet, ThemeProvider, cn, themePresets } from "../index.js";
+import {
+  Accordion,
+  AppHeader,
+  Avatar,
+  Button,
+  Card,
+  Sheet,
+  ThemeProvider,
+  cn,
+  themePresets,
+} from "../index.js";
 
 describe("public exports", () => {
   it("exports core components and utilities", () => {
@@ -12,6 +22,7 @@ describe("public exports", () => {
 
   it("exports Task 4 component entry points", () => {
     expect(Accordion).toBeDefined();
+    expect(AppHeader).toBeDefined();
     expect(Avatar).toBeDefined();
     expect(Sheet).toBeDefined();
   });

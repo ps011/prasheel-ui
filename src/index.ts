@@ -12,6 +12,12 @@ export {
 export { ThemeSwitcher, type ThemeSwitcherProps } from "./theme/theme-switcher.js";
 export { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./components/accordion.js";
 export { Avatar, AvatarFallback, AvatarImage } from "./components/avatar.js";
+export {
+  AppHeader,
+  type AppHeaderLinkProps,
+  type AppHeaderNavItem,
+  type AppHeaderProps,
+} from "./components/app-header.js";
 export { Badge, badgeVariants, type BadgeProps } from "./components/badge.js";
 export { Button, buttonVariants, type ButtonProps } from "./components/button.js";
 export {
