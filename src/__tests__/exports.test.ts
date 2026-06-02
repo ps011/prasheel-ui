@@ -5,7 +5,10 @@ import {
   Avatar,
   Button,
   Card,
+  Checkbox,
+  Input,
   Sheet,
+  Textarea,
   ThemeProvider,
   cn,
   themePresets,
@@ -15,6 +18,9 @@ describe("public exports", () => {
   it("exports core components and utilities", () => {
     expect(Button).toBeTypeOf("function");
     expect(Card).toBeTypeOf("function");
+    expect(Checkbox).toBeDefined();
+    expect(Input).toBeDefined();
+    expect(Textarea).toBeDefined();
     expect(ThemeProvider).toBeTypeOf("function");
     expect(cn("a", false, "b")).toBe("a b");
     expect(themePresets.blue.name).toBe("Blue");

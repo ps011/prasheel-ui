@@ -29,6 +29,9 @@ export {
   CardHeader,
   CardTitle,
 } from "./components/card.js";
+export { Checkbox, type CheckboxProps } from "./components/checkbox.js";
+export { Input, type InputProps } from "./components/input.js";
+export { Textarea, type TextareaProps } from "./components/textarea.js";
 export {
   type CarouselApi,
   Carousel,
