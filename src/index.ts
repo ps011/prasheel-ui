@@ -32,6 +32,7 @@ export {
 export { Checkbox, type CheckboxProps } from "./components/checkbox.js";
 export { Input, type InputProps } from "./components/input.js";
 export { SegmentedControl, type SegmentedControlProps, type SegmentedOption } from "./components/segmented-control.js";
+export { Select, type SelectProps } from "./components/select.js";
 export { Textarea, type TextareaProps } from "./components/textarea.js";
 export {
   type CarouselApi,
