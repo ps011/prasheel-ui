@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { Checkbox, Input, Textarea } from "../index.js";
+import { Checkbox, Input, Select, Textarea } from "../index.js";
 
 describe("form controls", () => {
   it("renders an input with design-system field styling", () => {
@@ -35,5 +35,11 @@ describe("form controls", () => {
     expect(checkbox).toBeChecked();
     expect(checkbox).toHaveClass("size-4");
     expect(checkbox).toHaveClass("accent-main");
+  });
+
+  it("renders a native select with accessible options", () => {
+    render(<Select aria-label="View" defaultValue="graph"><option value="graph">Graph</option><option value="walkthrough">Walkthrough</option></Select>);
+    expect(screen.getByRole("combobox", { name: "View" })).toHaveValue("graph");
+    expect(screen.getByRole("combobox", { name: "View" })).toHaveClass("ps-select");
   });
 });
